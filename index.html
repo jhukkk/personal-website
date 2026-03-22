@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Khulan Janchiv — Software Engineer</title>
+  <meta name="description" content="Khulan Janchiv – Software Engineer. University of Michigan CS. Building distributed systems, full-stack applications, and AI pipelines.">
+  <meta name="theme-color" content="#060606">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300;1,9..40,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="cursor-dot" id="cursor-dot"></div>
+  <div class="cursor-ring" id="cursor-ring"></div>
+
+  <nav class="nav" id="nav">
+    <a href="#hero" class="nav__logo">KJ</a>
+    <div class="nav__links">
+      <a href="#experience" class="nav__link">Experience</a>
+      <a href="#projects" class="nav__link">Projects</a>
+      <a href="#skills" class="nav__link">Skills</a>
+      <a href="#education" class="nav__link">Education</a>
+      <a href="#contact" class="nav__link">Contact</a>
+    </div>
+    <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#experience" class="mobile-menu__link">Experience</a>
+    <a href="#projects" class="mobile-menu__link">Projects</a>
+    <a href="#skills" class="mobile-menu__link">Skills</a>
+    <a href="#education" class="mobile-menu__link">Education</a>
+    <a href="#contact" class="mobile-menu__link">Contact</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero__bg">
+      <div class="hero__grid"></div>
+    </div>
+    <div class="hero__content">
+      <p class="hero__greeting reveal-up">Hi, I'm</p>
+      <h1 class="hero__name">
+        <span class="reveal-up" style="--d:.1s">KHULAN</span>
+        <span class="reveal-up hero__name--accent" style="--d:.2s">JANCHIV</span>
+      </h1>
+      <p class="hero__title reveal-up" style="--d:.35s">Software Engineer</p>
+      <p class="hero__sub reveal-up" style="--d:.45s">
+        Building distributed systems, full-stack products, and AI pipelines.<br>
+        CS & DS @ University of Michigan · Incoming SWE @ Bloomberg
+      </p>
+      <div class="hero__ctas reveal-up" style="--d:.55s">
+        <a href="#experience" class="btn btn--primary">View my work</a>
+        <a href="#contact" class="btn btn--outline">Get in touch</a>
+      </div>
+    </div>
+    <div class="hero__scroll">
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section" id="experience">
+    <div class="section__header">
+      <span class="section__number reveal-up">01</span>
+      <h2 class="section__title reveal-up" style="--d:.1s">Experience</h2>
+    </div>
+    <div class="exp-grid">
+
+      <article class="exp-card exp-card--featured reveal-up" style="--d:.1s">
+        <div class="exp-card__top">
+          <div class="exp-card__meta">
+            <span class="exp-card__date">Sep 2026</span>
+            <span class="exp-card__loc">New York, NY</span>
+          </div>
+          <h3 class="exp-card__company">Bloomberg</h3>
+          <p class="exp-card__role">Software Engineer (Incoming)</p>
+        </div>
+      </article>
+
+      <article class="exp-card reveal-up" style="--d:.15s">
+        <div class="exp-card__top">
+          <div class="exp-card__meta">
+            <span class="exp-card__date">Sep — Dec 2025</span>
+            <span class="exp-card__loc">New York, NY (Remote)</span>
+          </div>
+          <h3 class="exp-card__company">Chapter One</h3>
+          <p class="exp-card__role">Software Engineering Intern</p>
+        </div>
+        <ul class="exp-card__list">
+          <li>Owned full-stack acquisition analytics — connected Google Ads, Local Services Ads, and Search Console APIs with OAuth2; designed Prisma/PostgreSQL schemas and ETL pipelines; shipped Next.js/React/Tailwind dashboards used daily by marketing and business partners.</li>
+          <li>Integrated QuickBooks OAuth2 connectivity and webhook-driven account sync, reducing incorrect follow-up outreach 50–80% and support escalations 20–40%.</li>
+          <li>Built payments reconciliation and automated revenue recovery via Stripe webhooks, triggering consolidated invoices on failures with structured logging and Sentry alerts.</li>
+        </ul>
+        <div class="exp-card__tags">
+          <span>Nest.js</span><span>TypeScript</span><span>React</span><span>PostgreSQL</span><span>Stripe</span><span>OAuth2</span>
+        </div>
+      </article>
+
+      <article class="exp-card reveal-up" style="--d:.3s">
+        <div class="exp-card__top">
+          <div class="exp-card__meta">
+            <span class="exp-card__date">Jun — Aug 2025</span>
+            <span class="exp-card__loc">Ulaanbaatar, Mongolia</span>
+          </div>
+          <h3 class="exp-card__company">Invescore Financial Group</h3>
+          <p class="exp-card__role">AI Engineering Intern</p>
+        </div>
+        <ul class="exp-card__list">
+          <li>Architected an end-to-end ID verification pipeline with Python, OpenCV, and Django — 98.5% data extraction accuracy, slashing manual review time by 90%.</li>
+          <li>Engineered a multi-heuristic Tesseract post-processing engine and fine-tuned a YOLOv8 detector to overcome complex OCR inaccuracies.</li>
+          <li>Deployed an LLM-powered credit assessor with LangChain, accelerating daily application processing by 35%.</li>
+          <li>Rolled out a GitLab CI/CD pipeline, cutting model deployment time by 25%; drove code quality through rigorous peer reviews and sprint planning.</li>
+        </ul>
+        <div class="exp-card__tags">
+          <span>Python</span><span>Django</span><span>OpenCV</span><span>YOLOv8</span><span>LangChain</span><span>CI/CD</span>
+        </div>
+      </article>
+
+      <article class="exp-card reveal-up" style="--d:.4s">
+        <div class="exp-card__top">
+          <div class="exp-card__meta">
+            <span class="exp-card__date">Dec 2023 — Jan 2025</span>
+            <span class="exp-card__loc">Ann Arbor, MI</span>
+          </div>
+          <h3 class="exp-card__company">Eatclusive</h3>
+          <p class="exp-card__role">Software Engineering Intern</p>
+        </div>
+        <ul class="exp-card__list">
+          <li>Led a full backend migration from GoLang/Firebase to Python/Django/PostgreSQL, improving scalability and cutting maintenance costs by 30%.</li>
+          <li>Constructed a real-time FIFO queue system processing 100+ daily customer orders, boosting fulfillment efficiency by 20%.</li>
+          <li>Engineered a multi-level test suite with PyTest (unit, integration, regression), lowering critical production bugs by 25%.</li>
+          <li>Spearheaded software integration for an IoT-enabled irrigation system in partnership with NASA engineers.</li>
+        </ul>
+        <div class="exp-card__tags">
+          <span>Python</span><span>Django</span><span>PostgreSQL</span><span>PyTest</span><span>IoT</span>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section section--alt" id="projects">
+    <div class="section__header">
+      <span class="section__number reveal-up">02</span>
+      <h2 class="section__title reveal-up" style="--d:.1s">Projects</h2>
+    </div>
+    <div class="proj-grid">
+
+      <article class="proj-card reveal-up" style="--d:.1s">
+        <div class="proj-card__number">01</div>
+        <h3 class="proj-card__title">Search Engine</h3>
+        <p class="proj-card__desc">End-to-end search engine built from scratch with a 6-person team — custom STL library, reverse index, module APIs, and test harnesses for the crawler, parser, constraint-solver, and ranker.</p>
+        <div class="proj-card__tags">
+          <span>C++</span><span>Custom STL</span><span>Multithreading</span><span>Hash Tables</span>
+        </div>
+        <span class="proj-card__date">Jan 2026 — Present</span>
+      </article>
+
+      <article class="proj-card reveal-up" style="--d:.2s">
+        <div class="proj-card__number">02</div>
+        <h3 class="proj-card__title">Paxos Key/Value Service</h3>
+        <p class="proj-card__desc">Linearizable fault-tolerant key-value store using Paxos for consensus and sharding for load distribution, with real-time garbage collection and reduced network communication.</p>
+        <div class="proj-card__tags">
+          <span>Go</span><span>RPC</span><span>Paxos</span><span>Concurrency</span>
+        </div>
+        <span class="proj-card__date">Sep — Nov 2025</span>
+      </article>
+
+      <article class="proj-card reveal-up" style="--d:.3s">
+        <div class="proj-card__number">03</div>
+        <h3 class="proj-card__title">Multithreaded Network File Server</h3>
+        <p class="proj-card__desc">Concurrent crash-consistent C++ network file server with hierarchical namespaces using transactions for recovery, Boost threads and reader-writer locks for fine-grain concurrency, and POSIX sockets for client communication.</p>
+        <div class="proj-card__tags">
+          <span>C++</span><span>Boost Library</span><span>Threads</span><span>POSIX Sockets</span>
+        </div>
+        <span class="proj-card__date">Apr — May 2025</span>
+      </article>
+
+      <a href="https://github.com/jhukkk/mock_interview_platform" target="_blank" rel="noopener" class="proj-card proj-card--link reveal-up" style="--d:.4s">
+        <div class="proj-card__number">04</div>
+        <h3 class="proj-card__title">AI Interview Platform<svg class="proj-card__ext" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg></h3>
+        <p class="proj-card__desc">Serverless mock interview platform with real-time AI-driven interviews and feedback via Vapi AI SDK, Web Speech API, and Gemini 2.0, providing actionable performance analytics.</p>
+        <div class="proj-card__tags">
+          <span>Next.js</span><span>React</span><span>TypeScript</span><span>Firebase</span><span>Vapi AI</span>
+        </div>
+        <span class="proj-card__date">Apr — May 2025</span>
+      </a>
+
+      <a href="https://github.com/jhukkk/sub-tracker" target="_blank" rel="noopener" class="proj-card proj-card--link reveal-up" style="--d:.5s">
+        <div class="proj-card__number">05</div>
+        <h3 class="proj-card__title">SubTracker API<svg class="proj-card__ext" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg></h3>
+        <p class="proj-card__desc">Subscription management REST API with automated email reminders, JWT authentication, MongoDB storage, Arcjet security, and Upstash workflow-based scheduled notifications.</p>
+        <div class="proj-card__tags">
+          <span>Node.js</span><span>Express</span><span>MongoDB</span><span>JWT</span><span>Nodemailer</span>
+        </div>
+        <span class="proj-card__date">2025</span>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section" id="skills">
+    <div class="section__header">
+      <span class="section__number reveal-up">03</span>
+      <h2 class="section__title reveal-up" style="--d:.1s">Skills</h2>
+    </div>
+    <div class="skills-container">
+
+      <div class="skill-group reveal-up" style="--d:.1s">
+        <h3 class="skill-group__title">Languages</h3>
+        <div class="skill-group__items">
+          <span class="skill-tag">C / C++</span>
+          <span class="skill-tag">Go</span>
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">TypeScript</span>
+          <span class="skill-tag">SQL</span>
+        </div>
+      </div>
+
+      <div class="skill-group reveal-up" style="--d:.2s">
+        <h3 class="skill-group__title">Frameworks & Tools</h3>
+        <div class="skill-group__items">
+          <span class="skill-tag">Django</span>
+          <span class="skill-tag">Flask</span>
+          <span class="skill-tag">gRPC</span>
+          <span class="skill-tag">Node.js / Express</span>
+          <span class="skill-tag">Nest.js</span>
+          <span class="skill-tag">Next.js</span>
+          <span class="skill-tag">React</span>
+          <span class="skill-tag">PostgreSQL</span>
+          <span class="skill-tag">MongoDB</span>
+          <span class="skill-tag">Redis</span>
+          <span class="skill-tag">RabbitMQ</span>
+        </div>
+      </div>
+
+      <div class="skill-group reveal-up" style="--d:.3s">
+        <h3 class="skill-group__title">DevOps & Infrastructure</h3>
+        <div class="skill-group__items">
+          <span class="skill-tag">Linux</span>
+          <span class="skill-tag">Docker</span>
+          <span class="skill-tag">Kubernetes</span>
+          <span class="skill-tag">AWS</span>
+          <span class="skill-tag">Git / GitHub / GitLab</span>
+          <span class="skill-tag">CI/CD</span>
+          <span class="skill-tag">GitHub Actions</span>
+          <span class="skill-tag">GitLab CI</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="section section--alt" id="education">
+    <div class="section__header">
+      <span class="section__number reveal-up">04</span>
+      <h2 class="section__title reveal-up" style="--d:.1s">Education</h2>
+    </div>
+    <div class="edu-container">
+      <div class="edu-card reveal-up" style="--d:.15s">
+        <div class="edu-card__left">
+          <h3 class="edu-card__school">University of Michigan</h3>
+          <p class="edu-card__degree">Bachelor of Science in Computer Science and Data Science</p>
+          <p class="edu-card__when">Aug 2022 — May 2026 · Ann Arbor, MI</p>
+          <p class="edu-card__gpa">GPA: 3.36 / 4.0</p>
+        </div>
+        <div class="edu-card__right">
+          <div class="edu-awards">
+            <h4>Awards</h4>
+            <ul>
+              <li>Engineering Dean's List</li>
+              <li>University Honors</li>
+              <li>William J. Branstrom Prize</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="edu-courses reveal-up" style="--d:.25s">
+        <h4 class="edu-courses__title">Coursework</h4>
+        <div class="edu-courses__grid">
+          <span>Data Structures & Algorithms</span>
+          <span>Distributed Systems</span>
+          <span>Operating Systems</span>
+          <span>Machine Learning</span>
+          <span>Computer Vision</span>
+          <span>Computer Networks</span>
+          <span>Computer Organization</span>
+          <span>Web Systems</span>
+          <span>Conversational AI</span>
+          <span>CS Theory</span>
+          <span>Probability</span>
+          <span>Multivariable Calculus</span>
+          <span>Discrete Mathematics</span>
+          <span>Applied Linear Algebra</span>
+          <span>Statistics & Data Analytics</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section--contact" id="contact">
+    <div class="contact-content">
+      <h2 class="contact__title reveal-up">Let's build<br><span class="contact__title--accent">something great.</span></h2>
+      <p class="contact__sub reveal-up" style="--d:.15s">I'm always open to new opportunities, collaborations, and conversations.</p>
+      <div class="contact__links reveal-up" style="--d:.25s">
+        <a href="mailto:janchivv.khulan@gmail.com" class="contact-link">
+          <span class="contact-link__label">Email</span>
+          <span class="contact-link__value">janchivv.khulan@gmail.com</span>
+          <svg class="contact-link__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/khulan-janchiv-2625kj" target="_blank" rel="noopener" class="contact-link">
+          <span class="contact-link__label">LinkedIn</span>
+          <span class="contact-link__value">linkedin.com/in/khulan-janchiv-2625kj</span>
+          <svg class="contact-link__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+        </a>
+        <a href="https://github.com/jhukkk" target="_blank" rel="noopener" class="contact-link">
+          <span class="contact-link__label">GitHub</span>
+          <span class="contact-link__value">github.com/jhukkk</span>
+          <svg class="contact-link__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2026 Khulan Janchiv</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
